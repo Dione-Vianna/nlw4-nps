@@ -2,6 +2,8 @@ import express from 'express';
 
 const app = express();
 
-app.get('/', (req, res) => {});
+app.get('/users', (req, res) => {
+  return res.json({ massage: '#rumoaoproximonivel' });
+});
 
-app.listen(999, () => console.log('🚀  Server is running'));
+app.listen(3333, () => console.log('🚀 Server is running'));
